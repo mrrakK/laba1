@@ -9,5 +9,41 @@ namespace _1
         private string city;
         private string street;
         private int nh;
+
+        public string GetCity
+        {
+            get
+            {
+                return city;
+            }
+            set
+            {
+                this.city = GetCity;
+            }
+        }
+
+        public string GetStreet
+        {
+            get
+            {
+                return street;
+            }
+            set
+            {
+                this.street = GetStreet;
+            }
+        }
+
+        public int GetNH
+        {
+            get
+            {
+                return nh;
+            }
+            set
+            {
+                this.nh = GetNH;
+            }
+        }
     }
 }
