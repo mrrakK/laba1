@@ -6,5 +6,8 @@ namespace _1
 {
     class Adress
     {
+        private string city;
+        private string street;
+        private int nh;
     }
 }
