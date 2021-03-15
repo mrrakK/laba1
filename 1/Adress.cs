@@ -45,5 +45,35 @@ namespace _1
                 this.nh = GetNH;
             }
         }
+        public Adress(string city, string street, int nh)
+        {
+            this.city = city;
+            this.street = street;
+            this.nh = nh;
+        }
+
+        public Adress()
+        {
+            city = "";
+            street = "";
+            nh = 0;
+        }
+
+        public void SetInfo()
+        {
+            Console.Write("Город: ");
+            this.city = Console.ReadLine();
+            Console.Write("Улица: ");
+            this.street = Console.ReadLine();
+            Console.Write("Номер дома: ");
+            this.nh = Convert.ToInt32(Console.ReadLine());
+        }
+
+        public void GetInfo()
+        {
+            Console.WriteLine("Город: " + city);
+            Console.WriteLine("Улица: " + street);
+            Console.WriteLine("Номер дома: " + nh);
+        }
     }
 }
